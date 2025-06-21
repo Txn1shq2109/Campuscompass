@@ -20,12 +20,13 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   Bell,
   Bookmark,
-  LayoutDashboard,
+  Compass,
   PlusCircle,
   Sparkles,
   User,
   LogOut,
   Settings,
+  Users,
 } from 'lucide-react';
 import { Button } from './ui/button';
 import { OpportunityFinderDialog } from './opportunity-finder-dialog';
@@ -47,7 +48,8 @@ function AppSidebar() {
   const [isAdmin, setIsAdmin] = useLocalStorage('isAdmin', false);
 
   const menuItems = [
-    { href: '/', label: 'Dashboard', icon: LayoutDashboard },
+    { href: '/', label: 'Opportunities', icon: Compass },
+    { href: '/community', label: 'Community', icon: Users },
     { href: '/saved', label: 'Saved', icon: Bookmark },
     { href: '/notifications', label: 'Notifications', icon: Bell },
   ];
@@ -156,7 +158,7 @@ function AppHeader() {
         <DropdownMenuTrigger asChild>
           <Button variant="ghost" size="icon" className="rounded-full">
             <Avatar>
-              <AvatarImage src="https://placehold.co/40x40.png" alt="User avatar" />
+              <AvatarImage src="https://placehold.co/40x40.png" alt="User avatar" data-ai-hint="person face" />
               <AvatarFallback>CC</AvatarFallback>
             </Avatar>
              <span className="sr-only">Toggle user menu</span>

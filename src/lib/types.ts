@@ -11,3 +11,14 @@ export type Opportunity = {
   logoUrl?: string;
   isBookmarked?: boolean;
 };
+
+export type UserProfile = {
+  id: string;
+  name: string;
+  avatarUrl: string;
+  headline: string;
+  skills: string[];
+  interests: string[];
+  major: string;
+  bio: string;
+};

@@ -11,7 +11,7 @@ import { Button } from '@/components/ui/button';
 import { ListFilter, Search } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
-export default function DashboardPage() {
+export default function OpportunitiesPage() {
   const [opportunities, setOpportunities] = useState<Opportunity[]>([]);
   const [bookmarkedIds, setBookmarkedIds] = useLocalStorage<string[]>('bookmarkedOpportunities', []);
   
@@ -61,7 +61,7 @@ export default function DashboardPage() {
   return (
     <div className="flex flex-col gap-6 p-4 md:p-6">
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-bold tracking-tight">Discover Opportunities</h1>
+        <h1 className="text-2xl font-bold tracking-tight">Opportunities</h1>
         <p className="text-muted-foreground">Find your next internship, hackathon, or scholarship here.</p>
       </div>
 

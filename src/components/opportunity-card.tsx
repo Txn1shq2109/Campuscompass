@@ -21,7 +21,7 @@ export function OpportunityCard({ opportunity, onBookmarkToggle }: OpportunityCa
   const formattedDeadline = format(parseISO(deadline), 'MMM d, yyyy');
 
   return (
-    <Card className="flex flex-col h-full overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+    <Card className="flex flex-col h-full overflow-hidden transition-shadow duration-300 hover:shadow-lg hover:shadow-primary/20">
       <CardHeader className="flex flex-row items-start gap-4 p-4">
         {logoUrl && (
           <div className="relative h-12 w-12 flex-shrink-0">

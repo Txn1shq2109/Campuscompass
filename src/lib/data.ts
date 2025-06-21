@@ -1,4 +1,4 @@
-import type { Opportunity } from './types';
+import type { Opportunity, UserProfile } from './types';
 
 export const initialOpportunities: Opportunity[] = [
   {
@@ -96,6 +96,49 @@ export const initialOpportunities: Opportunity[] = [
     description: 'Showcase your design skills by redesigning a popular app. Judged by industry experts.',
     url: '#',
     logoUrl: 'https://placehold.co/100x100.png',
+  }
+];
+
+export const users: UserProfile[] = [
+  {
+    id: 'user-1',
+    name: 'Alex Doe',
+    avatarUrl: 'https://placehold.co/128x128.png',
+    headline: 'Aspiring Full-Stack Developer | CS Student',
+    skills: ['React', 'Node.js', 'Python', 'UI/UX Design', 'SQL'],
+    interests: ['AI Ethics', 'Open Source', 'Hackathons', 'Creative Coding'],
+    major: 'Computer Science',
+    bio: 'Third-year Computer Science student passionate about building scalable web applications and exploring the intersection of technology and social good. Always looking to collaborate on exciting projects!'
+  },
+  {
+    id: 'user-2',
+    name: 'Brenda Smith',
+    avatarUrl: 'https://placehold.co/128x128.png',
+    headline: 'Marketing Strategist & Content Creator',
+    skills: ['SEO', 'Content Marketing', 'Social Media', 'Analytics', 'Brand Strategy'],
+    interests: ['Sustainable Brands', 'Digital Storytelling', 'Startup Culture'],
+    major: 'Business Administration',
+    bio: 'I thrive on creating data-driven marketing campaigns that resonate with audiences. Currently exploring how brands can leverage new media to create authentic connections. Let\'s talk about growth!'
+  },
+  {
+    id: 'user-3',
+    name: 'Charlie Day',
+    avatarUrl: 'https://placehold.co/128x128.png',
+    headline: 'UX/UI Designer with a love for mobile apps',
+    skills: ['Figma', 'User Research', 'Prototyping', 'Wireframing', 'Design Systems'],
+    interests: ['Minimalism', 'Accessibility', 'Mobile Gaming'],
+    major: 'Interaction Design',
+    bio: 'Designing user-centric experiences is my calling. I focus on creating intuitive and beautiful interfaces that solve real-world problems. Currently obsessed with micro-interactions and design systems.'
+  },
+  {
+    id: 'user-4',
+    name: 'Diana Prince',
+    avatarUrl: 'https://placehold.co/128x128.png',
+    headline: 'Biotechnology Researcher & Future Scientist',
+    skills: ['CRISPR', 'Lab Research', 'Data Analysis', 'Scientific Writing'],
+    interests: ['Genomics', 'Sustainable Agriculture', 'Bioinformatics'],
+    major: 'Molecular Biology',
+    bio: 'Dedicated researcher with hands-on experience in genetic engineering techniques. My goal is to contribute to scientific breakthroughs that improve human health and the environment.'
   }
 ];
 
